@@ -6,10 +6,10 @@ namespace vaja6 {
 
     //podatki
     class Igralec {
-        public int id;
-        public string u_ime;
-        public string u_geslo;
-        public static int stIg = 1;
+        private int id;
+        private string u_ime;
+        private string u_geslo;
+        private static int stIg = 1;
 
          //nastavijo se privzeti podatki
         public Igralec() {

@@ -4,12 +4,14 @@ namespace vaja6 {
 
     public enum Poklic { Bojevnik, Carovnik, Menih, Tat, Lovec, Duhoven };
 
+    //podatki
     class Igralec {
         public int id;
         public string u_ime;
         public string u_geslo;
         public static int stIg = 1;
 
+         //nastavijo se privzeti podatki
         public Igralec() {
             u_ime = "";
             u_geslo = "";
@@ -17,6 +19,7 @@ namespace vaja6 {
             stIg++;
         }
 
+        //vrne ID
         public int Id {
             get
             {
@@ -24,6 +27,7 @@ namespace vaja6 {
             }
         }
 
+        //imenu se določi vrednost, vrne ime
         public string U_ime {
             get
             {
@@ -35,6 +39,7 @@ namespace vaja6 {
             }
         }
 
+        //nastavi se vrednost geslu, vrne geslo
         public string U_geslo
         {
             get
@@ -47,6 +52,7 @@ namespace vaja6 {
             }
         }
 
+        //vrne st ig
         public static int StIg
         {
             get { return stIg; }
